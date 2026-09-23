@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smycke — Rasch &amp; Q Design</title>
+<meta name="description" content="Produktinformation från Rasch &amp; Q Design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="varukorg">
+
+<a href="#main" class="visually-hidden">Hoppa till innehåll</a>
+
+<header class="site-header">
+  <div class="header-inner">
+     <a href="index.html" class="wordmark">Rasch & Q Design<span></span></a>
+    <nav class="main-nav" aria-label="Huvudmeny">
+      <a href="index.html" aria-current="page" data-sv="Hem" data-en="Home">Hem</a>
+      <a href="tjanster.html" data-sv="Tjänster" data-en="Services">Tjänster</a>
+      <a href="butik.html" data-sv="Butik" data-en="Store">Butik</a>
+      <a href="hitta-hit.html" data-sv="Hitta hit" data-en="Find Us">Hitta hit</a>
+      <a href="kontakt.html" data-sv="Kontakt" data-en="Contact">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Språk / Language">
+        <button type="button" data-lang-btn="sv">SV</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+      <a href="varukorg.html" class="cart-link" data-sv-aria="Varukorg" data-en-aria="Cart" aria-label="Varukorg">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </a>
+      <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-kicker" data-sv="Varukorg" data-en="Cart">Varukorg</p>
+      <h1 data-sv="Din varukorg" data-en="Your cart">Din varukorg</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div id="cart-root" aria-live="polite" aria-busy="true"></div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="wordmark">Rasch &amp; Q Design</a>
+        <p data-sv="Smycken med personlig karaktär, skräddarsydd design, gravering, polering och reparation på Föreningsgatan i Malmö." data-en="Jewellery with personal character, custom design, engraving, polishing and repairs on Föreningsgatan in Malmö.">Smycken med personlig karaktär, skräddarsydd design, gravering, polering och reparation på Föreningsgatan i Malmö.</p>
+        <a class="footer-social" href="https://www.instagram.com/raschandqdesign/" target="_blank" rel="noopener">@raschandqdesign</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-sv="Sidor" data-en="Pages">Sidor</h4>
+        <ul>
+          <li><a href="index.html" data-sv="Hem" data-en="Home">Hem</a></li>
+          <li><a href="tjanster.html" data-sv="Tjänster" data-en="Services">Tjänster</a></li>
+          <li><a href="butik.html" data-sv="Butik" data-en="Shop">Butik</a></li>
+          <li><a href="galleriet.html" data-sv="Galleriet" data-en="Gallery">Galleriet</a></li>
+          <li><a href="hitta-hit.html" data-sv="Hitta hit" data-en="Find Us">Hitta hit</a></li>
+          <li><a href="kontakt.html" data-sv="Kontakt" data-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-sv="Öppettider" data-en="Opening hours">Öppettider</h4>
+        <p data-sv="Mån – Fre: 10:00 – 20:00" data-en="Mon – Fri: 10am – 8pm">Mån – Fre: 10:00 – 20:00</p>
+        <p data-sv="Lördag: 10:00 – 20:00" data-en="Saturday: 10am – 8pm">Lördag: 10:00 – 20:00</p>
+        <p data-sv="Söndag: Stängt" data-en="Sunday: Closed">Söndag: Stängt</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-sv="Kontakt" data-en="Contact">Kontakt</h4>
+        <p>Föreningsgatan 5</p>
+        <p>211 44 Malmö</p>
+        <p><a href="tel:+46735633688">073 563 36 88</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year></span> Rasch &amp; Q Design. <span data-sv="Alla rättigheter förbehållna." data-en="All rights reserved.">Alla rättigheter förbehållna.</span></p>
+      <div class="lang-switch" role="group" aria-label="Språk / Language">
+        <button type="button" data-lang-btn="sv">SV</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/shop-core.js"></script>
+<script src="js/shop-pages.js"></script>
+</body>
+</html>

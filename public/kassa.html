@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smycke — Rasch &amp; Q Design</title>
+<meta name="description" content="Produktinformation från Rasch &amp; Q Design.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="kassa">
+
+<a href="#main" class="visually-hidden">Hoppa till innehåll</a>
+
+<header class="site-header">
+  <div class="header-inner">
+     <a href="index.html" class="wordmark">Rasch & Q Design <span></span></a>
+    <nav class="main-nav" aria-label="Huvudmeny">
+      <a href="index.html" aria-current="page" data-sv="Hem" data-en="Home">Hem</a>
+      <a href="tjanster.html" data-sv="Tjänster" data-en="Services">Tjänster</a>
+      <a href="butik.html" data-sv="Butik" data-en="Store">Butik</a>
+      <a href="hitta-hit.html" data-sv="Hitta hit" data-en="Find Us">Hitta hit</a>
+      <a href="kontakt.html" data-sv="Kontakt" data-en="Contact">Kontakt</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Språk / Language">
+        <button type="button" data-lang-btn="sv">SV</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+      <a href="varukorg.html" class="cart-link" data-sv-aria="Varukorg" data-en-aria="Cart" aria-label="Varukorg">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </a>
+      <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-kicker" data-sv="Kassa" data-en="Checkout">Kassa</p>
+      <h1 data-sv="Slutför din beställning" data-en="Complete your order">Slutför din beställning</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div id="checkout-empty" hidden></div>
+      <div class="checkout-layout" id="checkout-layout" hidden>
+
+        <form id="checkout-form" class="checkout-form" novalidate>
+          <div id="checkout-banner" class="banner" role="alert" hidden></div>
+
+          <fieldset>
+            <legend data-sv="Kunduppgifter" data-en="Your details">Kunduppgifter</legend>
+            <div class="field-row">
+          <div class="field" data-field="first_name">
+            <label for="f-first_name" data-sv="Förnamn" data-en="First name">Förnamn</label>
+            <input type="text" id="f-first_name" name="first_name" autocomplete="given-name" required aria-describedby="err-first_name">
+            <p class="field-error" id="err-first_name" role="alert" hidden></p>
+          </div>
+          <div class="field" data-field="last_name">
+            <label for="f-last_name" data-sv="Efternamn" data-en="Last name">Efternamn</label>
+            <input type="text" id="f-last_name" name="last_name" autocomplete="family-name" required aria-describedby="err-last_name">
+            <p class="field-error" id="err-last_name" role="alert" hidden></p>
+          </div>
+            </div>
+            <div class="field-row">
+          <div class="field" data-field="email">
+            <label for="f-email" data-sv="E-post" data-en="Email">E-post</label>
+            <input type="email" id="f-email" name="email" autocomplete="email" required aria-describedby="err-email">
+            <p class="field-error" id="err-email" role="alert" hidden></p>
+          </div>
+          <div class="field" data-field="phone">
+            <label for="f-phone" data-sv="Telefon" data-en="Phone">Telefon</label>
+            <input type="tel" id="f-phone" name="phone" autocomplete="tel" required aria-describedby="err-phone">
+            <p class="field-error" id="err-phone" role="alert" hidden></p>
+          </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend data-sv="Leveransadress" data-en="Delivery address">Leveransadress</legend>
+          <div class="field" data-field="address">
+            <label for="f-address" data-sv="Adress" data-en="Address">Adress</label>
+            <input type="text" id="f-address" name="address" autocomplete="address-line1" required aria-describedby="err-address">
+            <p class="field-error" id="err-address" role="alert" hidden></p>
+          </div>
+          <div class="field" data-field="address2">
+            <label for="f-address2" data-sv="Lägenhet / c/o (valfritt)" data-en="Apartment / c/o (optional)">Lägenhet / c/o (valfritt)</label>
+            <input type="text" id="f-address2" name="address2" autocomplete="address-line2" aria-describedby="err-address2">
+            <p class="field-error" id="err-address2" role="alert" hidden></p>
+          </div>
+            <div class="field-row">
+          <div class="field" data-field="postal_code">
+            <label for="f-postal_code" data-sv="Postnummer" data-en="Postal code">Postnummer</label>
+            <input type="text" id="f-postal_code" name="postal_code" autocomplete="postal-code" required aria-describedby="err-postal_code">
+            <p class="field-error" id="err-postal_code" role="alert" hidden></p>
+          </div>
+          <div class="field" data-field="city">
+            <label for="f-city" data-sv="Ort" data-en="City">Ort</label>
+            <input type="text" id="f-city" name="city" autocomplete="address-level2" required aria-describedby="err-city">
+            <p class="field-error" id="err-city" role="alert" hidden></p>
+          </div>
+            </div>
+            <div class="field" data-field="country">
+              <label for="f-country" data-sv="Land" data-en="Country">Land</label>
+              <select id="f-country" name="country" autocomplete="country" required aria-describedby="err-country"></select>
+              <p class="field-error" id="err-country" role="alert" hidden></p>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend data-sv="Betalning" data-en="Payment">Betalning</legend>
+            <p class="form-note" id="payment-note"></p>
+          </fieldset>
+
+          <div class="field checkbox-field" data-field="accept_terms">
+            <label class="checkbox">
+              <input type="checkbox" id="f-accept_terms" name="accept_terms" aria-describedby="err-accept_terms">
+              <span><span data-sv="Jag har läst och godkänner" data-en="I have read and accept the">Jag har läst och godkänner</span> <a href="villkor.html" target="_blank" rel="noopener" data-sv="köpvillkoren och integritetspolicyn" data-en="terms of purchase and privacy policy">köpvillkoren och integritetspolicyn</a>.</span>
+            </label>
+            <p class="field-error" id="err-accept_terms" role="alert" hidden></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="place-order" data-sv="Lägg beställning" data-en="Place order">Lägg beställning</button>
+        </form>
+
+        <aside class="summary-panel" id="checkout-summary" aria-label="Orderöversikt"></aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="wordmark">Rasch &amp; Q Design</a>
+        <p data-sv="Smycken med personlig karaktär, skräddarsydd design, gravering, polering och reparation på Föreningsgatan i Malmö." data-en="Jewellery with personal character, custom design, engraving, polishing and repairs on Föreningsgatan in Malmö.">Smycken med personlig karaktär, skräddarsydd design, gravering, polering och reparation på Föreningsgatan i Malmö.</p>
+        <a class="footer-social" href="https://www.instagram.com/raschandqdesign/" target="_blank" rel="noopener">@raschandqdesign</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-sv="Sidor" data-en="Pages">Sidor</h4>
+        <ul>
+          <li><a href="index.html" data-sv="Hem" data-en="Home">Hem</a></li>
+          <li><a href="tjanster.html" data-sv="Tjänster" data-en="Services">Tjänster</a></li>
+          <li><a href="butik.html" data-sv="Butik" data-en="Shop">Butik</a></li>
+          <li><a href="galleriet.html" data-sv="Galleriet" data-en="Gallery">Galleriet</a></li>
+          <li><a href="hitta-hit.html" data-sv="Hitta hit" data-en="Find Us">Hitta hit</a></li>
+          <li><a href="kontakt.html" data-sv="Kontakt" data-en="Contact">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-sv="Öppettider" data-en="Opening hours">Öppettider</h4>
+        <p data-sv="Mån – Fre: 10:00 – 20:00" data-en="Mon – Fri: 10am – 8pm">Mån – Fre: 10:00 – 20:00</p>
+        <p data-sv="Lördag: 10:00 – 20:00" data-en="Saturday: 10am – 8pm">Lördag: 10:00 – 20:00</p>
+        <p data-sv="Söndag: Stängt" data-en="Sunday: Closed">Söndag: Stängt</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-sv="Kontakt" data-en="Contact">Kontakt</h4>
+        <p>Föreningsgatan 5</p>
+        <p>211 44 Malmö</p>
+        <p><a href="tel:+46735633688">073 563 36 88</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year></span> Rasch &amp; Q Design. <span data-sv="Alla rättigheter förbehållna." data-en="All rights reserved.">Alla rättigheter förbehållna.</span></p>
+      <div class="lang-switch" role="group" aria-label="Språk / Language">
+        <button type="button" data-lang-btn="sv">SV</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/shop-core.js"></script>
+<script src="js/shop-pages.js"></script>
+</body>
+</html>

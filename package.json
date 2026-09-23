@@ -1,0 +1,14 @@
+{
+  "name": "malmo-watch-clinic-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rasch o Q Design website with a working shop, order system and admin",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server/server.js",
+    "seed": "node --disable-warning=ExperimentalWarning server/scripts/seed.js",
+    "create-admin": "node --disable-warning=ExperimentalWarning server/scripts/create-admin.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  }
+}
